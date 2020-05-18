@@ -2,6 +2,7 @@
 //  Chat.swift
 //  SnapEngageSDK
 //
+//  Created by SnapEngage on 2020. 04. 14..
 //  Copyright © 2020. SnapEngage. All rights reserved.
 //
 

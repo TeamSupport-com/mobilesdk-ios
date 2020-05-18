@@ -2,6 +2,7 @@
 //  SnapEngageSDK.h
 //  SnapEngageSDK
 //
+//  Created by SnapEngage on 2020. 04. 02..
 //  Copyright © 2020. SnapEngage. All rights reserved.
 //
 

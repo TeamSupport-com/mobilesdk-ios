@@ -17,6 +17,7 @@
 		FF23A97D2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23A97C2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift */; };
 		FF2A011D2449DDEC009E8C75 /* ErrorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A011C2449DDEC009E8C75 /* ErrorEvent.swift */; };
 		FF2A011F2449DE13009E8C75 /* ErrorEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A011E2449DE13009E8C75 /* ErrorEventHandlerImpl.swift */; };
+		FF4ABE3A24614B1C00F85C95 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4ABE3924614B1C00F85C95 /* ErrorResponse.swift */; };
 		FF4B5BAF2435D469002C0B92 /* SnapEngageSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4B5BA52435D469002C0B92 /* SnapEngageSDK.framework */; };
 		FF4B5BB62435D469002C0B92 /* SnapEngageSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4B5BA82435D469002C0B92 /* SnapEngageSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF4CF17B243C57DE00DA2680 /* HtmlLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CF17A243C57DE00DA2680 /* HtmlLoaderTests.swift */; };
@@ -44,6 +45,8 @@
 		FFB21701243757C3004E86A3 /* CloseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21700243757C3004E86A3 /* CloseEvent.swift */; };
 		FFB21703243757ED004E86A3 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21702243757ED004E86A3 /* EventHandler.swift */; };
 		FFB2170524375816004E86A3 /* CloseEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2170424375816004E86A3 /* CloseEventHandlerImpl.swift */; };
+		FFCE7512245ABD1D00086462 /* WidgetAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE7511245ABD1D00086462 /* WidgetAvailability.swift */; };
+		FFCFC6112459B77D0036F4AF /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFC6102459B77D0036F4AF /* WidgetProvider.swift */; };
 		FFDB62D82453001800EB433D /* ConfigurationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB62D72453001800EB433D /* ConfigurationValidator.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,7 @@
 		FF23A97C2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnReadyEventHandlerImpl.swift; sourceTree = "<group>"; };
 		FF2A011C2449DDEC009E8C75 /* ErrorEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEvent.swift; sourceTree = "<group>"; };
 		FF2A011E2449DE13009E8C75 /* ErrorEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FF4ABE3924614B1C00F85C95 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		FF4B5BA52435D469002C0B92 /* SnapEngageSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapEngageSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4B5BA82435D469002C0B92 /* SnapEngageSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapEngageSDK.h; sourceTree = "<group>"; };
 		FF4B5BA92435D469002C0B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		FFB21700243757C3004E86A3 /* CloseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseEvent.swift; sourceTree = "<group>"; };
 		FFB21702243757ED004E86A3 /* EventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
 		FFB2170424375816004E86A3 /* CloseEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFCE7511245ABD1D00086462 /* WidgetAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetAvailability.swift; sourceTree = "<group>"; };
+		FFCFC6102459B77D0036F4AF /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
 		FFDB62D72453001800EB433D /* ConfigurationValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +174,7 @@
 		FF4B5BA72435D469002C0B92 /* SnapEngageSDK */ = {
 			isa = PBXGroup;
 			children = (
+				FFCFC6122459B7940036F4AF /* Networking */,
 				FF4B5BA82435D469002C0B92 /* SnapEngageSDK.h */,
 				FF2A01192449DD1D009E8C75 /* Error */,
 				FFB21706243758E1004E86A3 /* Events */,
@@ -311,6 +318,16 @@
 			path = Close;
 			sourceTree = "<group>";
 		};
+		FFCFC6122459B7940036F4AF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FFCE7511245ABD1D00086462 /* WidgetAvailability.swift */,
+				FF4ABE3924614B1C00F85C95 /* ErrorResponse.swift */,
+				FFCFC6102459B77D0036F4AF /* WidgetProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -437,6 +454,7 @@
 				FFA28A68243CA297002C88C6 /* MessageSubmitEvent.swift in Sources */,
 				FFA28A6F243CA53F002C88C6 /* MinimizeEventHandlerImpl.swift in Sources */,
 				FF2A011F2449DE13009E8C75 /* ErrorEventHandlerImpl.swift in Sources */,
+				FF4ABE3A24614B1C00F85C95 /* ErrorResponse.swift in Sources */,
 				FFA28A60243C9CDA002C88C6 /* ChatMessageReceivedEventHandlerImpl.swift in Sources */,
 				FFA28A6A243CA30C002C88C6 /* MessageSubmitEventHandlerImpl.swift in Sources */,
 				FFA28A74243CA7B7002C88C6 /* OpenEventHandlerImpl.swift in Sources */,
@@ -444,6 +462,7 @@
 				FFB216F224371279004E86A3 /* ChatView.swift in Sources */,
 				FFA28A88243CAEA8002C88C6 /* SwitchWidgetEventHandlerImpl.swift in Sources */,
 				FFA28A63243C9F07002C88C6 /* ChatMessageSentEvent.swift in Sources */,
+				FFCFC6112459B77D0036F4AF /* WidgetProvider.swift in Sources */,
 				FF23A97D2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift in Sources */,
 				FFA28A8D243CB17E002C88C6 /* ButtonEventHandlerImpl.swift in Sources */,
 				FFB21703243757ED004E86A3 /* EventHandler.swift in Sources */,
@@ -454,6 +473,7 @@
 				FFB21701243757C3004E86A3 /* CloseEvent.swift in Sources */,
 				FFA28A83243CAD7F002C88C6 /* StartCallmeEventHandlerImpl.swift in Sources */,
 				FF2A011D2449DDEC009E8C75 /* ErrorEvent.swift in Sources */,
+				FFCE7512245ABD1D00086462 /* WidgetAvailability.swift in Sources */,
 				FFA28A5E243C9C6E002C88C6 /* ChatMessageReceivedEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,16 +639,14 @@
 					"@loader_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapengage.SnapEngageSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.attrecto.SnapEngageSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -652,15 +670,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapengage.SnapEngageSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.attrecto.SnapEngageSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -785,16 +801,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapengage.SnapEngageSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.attrecto.SnapEngageSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Stage;
 		};

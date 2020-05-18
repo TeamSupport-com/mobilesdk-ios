@@ -2,6 +2,7 @@
 //  ChatView.swift
 //  SnapEngageSDK
 //
+//  Created by SnapEngage on 2020. 04. 03..
 //  Copyright © 2020. SnapEngage. All rights reserved.
 //
 
@@ -76,6 +77,21 @@ public class ChatView: UIView, Chat {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
+    }
+    
+    /// You can get the status of the widget
+    /// - Parameters:
+    ///     - widgetId: Optional parameter, if it's nil, the ChatConfiguration's widgetId is used
+    ///     - completion: Completion cloesure with a result parameter. The result can contain the WidgetAvailability or an Error, which can be a ChatError
+    public func checkWidgetAvailability(widgetId: String? = nil, completion: @escaping (Result<WidgetAvailability, Error>) -> Void) {
+        guard let config = self.configuration else {
+            completion(.failure(ChatError.noChatConfiguration))
+            return
+        }
+        
+        let widgetId = widgetId ?? config.widgetId
+        
+        WidgetProvider(baseUrl: config.baseInstanceUrl).checkWidgetAvailability(widgetId: widgetId, completion: completion)
     }
     
     /// Setter to load a specific configuration to this View.

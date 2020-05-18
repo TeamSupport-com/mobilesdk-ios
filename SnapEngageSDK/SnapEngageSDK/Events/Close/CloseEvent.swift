@@ -2,8 +2,8 @@
 //  CloseEvent.swift
 //  SnapEngageSDK
 //
-//  Created by Kristof Varga on 2020. 04. 03..
-//  Copyright © 2020. Attrecto. All rights reserved.
+//  Created by SnapEngage on 2020. 04. 03..
+//  Copyright © 2020. SnapEngage. All rights reserved.
 //
 
 import Foundation
