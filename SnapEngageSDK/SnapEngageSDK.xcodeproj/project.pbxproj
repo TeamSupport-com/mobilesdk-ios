@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF07D20B243777EE00D45D0E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FF07D209243777EB00D45D0E /* index.html */; };
+		FF0DD1BE243B087B008382CE /* ChatConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DD1BD243B087B008382CE /* ChatConfiguration.swift */; };
+		FF0DD1C0243B0EBD008382CE /* HtmlLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DD1BF243B0EBD008382CE /* HtmlLoader.swift */; };
+		FF0DD1C2243B26F4008382CE /* CustomVariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DD1C1243B26F4008382CE /* CustomVariableTests.swift */; };
+		FF23A9762445B16D00CF37E2 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23A9752445B16D00CF37E2 /* Chat.swift */; };
+		FF23A9782445B42300CF37E2 /* ChatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23A9772445B42300CF37E2 /* ChatError.swift */; };
+		FF23A97B2445D1C700CF37E2 /* OnReadyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23A97A2445D1C700CF37E2 /* OnReadyEvent.swift */; };
+		FF23A97D2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23A97C2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift */; };
+		FF2A011D2449DDEC009E8C75 /* ErrorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A011C2449DDEC009E8C75 /* ErrorEvent.swift */; };
+		FF2A011F2449DE13009E8C75 /* ErrorEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A011E2449DE13009E8C75 /* ErrorEventHandlerImpl.swift */; };
+		FF4B5BAF2435D469002C0B92 /* SnapEngageSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4B5BA52435D469002C0B92 /* SnapEngageSDK.framework */; };
+		FF4B5BB62435D469002C0B92 /* SnapEngageSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4B5BA82435D469002C0B92 /* SnapEngageSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4CF17B243C57DE00DA2680 /* HtmlLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CF17A243C57DE00DA2680 /* HtmlLoaderTests.swift */; };
+		FFA28A5E243C9C6E002C88C6 /* ChatMessageReceivedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A5D243C9C6E002C88C6 /* ChatMessageReceivedEvent.swift */; };
+		FFA28A60243C9CDA002C88C6 /* ChatMessageReceivedEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A5F243C9CDA002C88C6 /* ChatMessageReceivedEventHandlerImpl.swift */; };
+		FFA28A63243C9F07002C88C6 /* ChatMessageSentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A62243C9F07002C88C6 /* ChatMessageSentEvent.swift */; };
+		FFA28A65243C9FD1002C88C6 /* ChatMessageSentEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A64243C9FD1002C88C6 /* ChatMessageSentEventHandlerImpl.swift */; };
+		FFA28A68243CA297002C88C6 /* MessageSubmitEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A67243CA297002C88C6 /* MessageSubmitEvent.swift */; };
+		FFA28A6A243CA30C002C88C6 /* MessageSubmitEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A69243CA30C002C88C6 /* MessageSubmitEventHandlerImpl.swift */; };
+		FFA28A6D243CA4F8002C88C6 /* MinimizeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A6C243CA4F8002C88C6 /* MinimizeEvent.swift */; };
+		FFA28A6F243CA53F002C88C6 /* MinimizeEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A6E243CA53F002C88C6 /* MinimizeEventHandlerImpl.swift */; };
+		FFA28A72243CA792002C88C6 /* OpenEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A71243CA792002C88C6 /* OpenEvent.swift */; };
+		FFA28A74243CA7B7002C88C6 /* OpenEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A73243CA7B7002C88C6 /* OpenEventHandlerImpl.swift */; };
+		FFA28A77243CAA11002C88C6 /* OpenProactiveEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A76243CAA11002C88C6 /* OpenProactiveEvent.swift */; };
+		FFA28A79243CAA36002C88C6 /* OpenProactiveEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A78243CAA36002C88C6 /* OpenProactiveEventHandlerImpl.swift */; };
+		FFA28A7C243CAC06002C88C6 /* StartChatEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A7B243CAC06002C88C6 /* StartChatEvent.swift */; };
+		FFA28A7E243CAC5B002C88C6 /* StartChatEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A7D243CAC5B002C88C6 /* StartChatEventHandlerImpl.swift */; };
+		FFA28A81243CAD58002C88C6 /* StartCallmeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A80243CAD58002C88C6 /* StartCallmeEvent.swift */; };
+		FFA28A83243CAD7F002C88C6 /* StartCallmeEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A82243CAD7F002C88C6 /* StartCallmeEventHandlerImpl.swift */; };
+		FFA28A86243CAE7A002C88C6 /* SwitchWidgetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A85243CAE7A002C88C6 /* SwitchWidgetEvent.swift */; };
+		FFA28A88243CAEA8002C88C6 /* SwitchWidgetEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A87243CAEA8002C88C6 /* SwitchWidgetEventHandlerImpl.swift */; };
+		FFA28A8B243CAFE7002C88C6 /* ButtonEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A8A243CAFE7002C88C6 /* ButtonEvent.swift */; };
+		FFA28A8D243CB17E002C88C6 /* ButtonEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA28A8C243CB17E002C88C6 /* ButtonEventHandlerImpl.swift */; };
+		FFB216F224371279004E86A3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB216F124371279004E86A3 /* ChatView.swift */; };
+		FFB21701243757C3004E86A3 /* CloseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21700243757C3004E86A3 /* CloseEvent.swift */; };
+		FFB21703243757ED004E86A3 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21702243757ED004E86A3 /* EventHandler.swift */; };
+		FFB2170524375816004E86A3 /* CloseEventHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2170424375816004E86A3 /* CloseEventHandlerImpl.swift */; };
+		FFDB62D82453001800EB433D /* ConfigurationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB62D72453001800EB433D /* ConfigurationValidator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4B5BB02435D469002C0B92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4B5B9C2435D469002C0B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4B5BA42435D469002C0B92;
+			remoteInfo = SnapEngageSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF07D209243777EB00D45D0E /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FF0DD1BD243B087B008382CE /* ChatConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConfiguration.swift; sourceTree = "<group>"; };
+		FF0DD1BF243B0EBD008382CE /* HtmlLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlLoader.swift; sourceTree = "<group>"; };
+		FF0DD1C1243B26F4008382CE /* CustomVariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVariableTests.swift; sourceTree = "<group>"; };
+		FF23A9752445B16D00CF37E2 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		FF23A9772445B42300CF37E2 /* ChatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatError.swift; sourceTree = "<group>"; };
+		FF23A97A2445D1C700CF37E2 /* OnReadyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnReadyEvent.swift; sourceTree = "<group>"; };
+		FF23A97C2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnReadyEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FF2A011C2449DDEC009E8C75 /* ErrorEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEvent.swift; sourceTree = "<group>"; };
+		FF2A011E2449DE13009E8C75 /* ErrorEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FF4B5BA52435D469002C0B92 /* SnapEngageSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapEngageSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4B5BA82435D469002C0B92 /* SnapEngageSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapEngageSDK.h; sourceTree = "<group>"; };
+		FF4B5BA92435D469002C0B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4B5BAE2435D469002C0B92 /* SnapEngageSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapEngageSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4B5BB52435D469002C0B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4CF17A243C57DE00DA2680 /* HtmlLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlLoaderTests.swift; sourceTree = "<group>"; };
+		FFA28A5D243C9C6E002C88C6 /* ChatMessageReceivedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageReceivedEvent.swift; sourceTree = "<group>"; };
+		FFA28A5F243C9CDA002C88C6 /* ChatMessageReceivedEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageReceivedEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A62243C9F07002C88C6 /* ChatMessageSentEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageSentEvent.swift; sourceTree = "<group>"; };
+		FFA28A64243C9FD1002C88C6 /* ChatMessageSentEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageSentEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A67243CA297002C88C6 /* MessageSubmitEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSubmitEvent.swift; sourceTree = "<group>"; };
+		FFA28A69243CA30C002C88C6 /* MessageSubmitEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSubmitEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A6C243CA4F8002C88C6 /* MinimizeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizeEvent.swift; sourceTree = "<group>"; };
+		FFA28A6E243CA53F002C88C6 /* MinimizeEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizeEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A71243CA792002C88C6 /* OpenEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEvent.swift; sourceTree = "<group>"; };
+		FFA28A73243CA7B7002C88C6 /* OpenEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A76243CAA11002C88C6 /* OpenProactiveEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenProactiveEvent.swift; sourceTree = "<group>"; };
+		FFA28A78243CAA36002C88C6 /* OpenProactiveEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenProactiveEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A7B243CAC06002C88C6 /* StartChatEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartChatEvent.swift; sourceTree = "<group>"; };
+		FFA28A7D243CAC5B002C88C6 /* StartChatEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartChatEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A80243CAD58002C88C6 /* StartCallmeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCallmeEvent.swift; sourceTree = "<group>"; };
+		FFA28A82243CAD7F002C88C6 /* StartCallmeEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCallmeEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A85243CAE7A002C88C6 /* SwitchWidgetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchWidgetEvent.swift; sourceTree = "<group>"; };
+		FFA28A87243CAEA8002C88C6 /* SwitchWidgetEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchWidgetEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFA28A8A243CAFE7002C88C6 /* ButtonEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEvent.swift; sourceTree = "<group>"; };
+		FFA28A8C243CB17E002C88C6 /* ButtonEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFB216F124371279004E86A3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FFB21700243757C3004E86A3 /* CloseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseEvent.swift; sourceTree = "<group>"; };
+		FFB21702243757ED004E86A3 /* EventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
+		FFB2170424375816004E86A3 /* CloseEventHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseEventHandlerImpl.swift; sourceTree = "<group>"; };
+		FFDB62D72453001800EB433D /* ConfigurationValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationValidator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4B5BA22435D469002C0B92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B5BAB2435D469002C0B92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B5BAF2435D469002C0B92 /* SnapEngageSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF07D20C2437794B00D45D0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF07D209243777EB00D45D0E /* index.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF23A9792445D1B400CF37E2 /* OnReady */ = {
+			isa = PBXGroup;
+			children = (
+				FF23A97A2445D1C700CF37E2 /* OnReadyEvent.swift */,
+				FF23A97C2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift */,
+			);
+			path = OnReady;
+			sourceTree = "<group>";
+		};
+		FF2A01192449DD1D009E8C75 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FF23A9772445B42300CF37E2 /* ChatError.swift */,
+				FF2A011C2449DDEC009E8C75 /* ErrorEvent.swift */,
+				FF2A011E2449DE13009E8C75 /* ErrorEventHandlerImpl.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		FF4B5B9B2435D469002C0B92 = {
+			isa = PBXGroup;
+			children = (
+				FF4B5BA72435D469002C0B92 /* SnapEngageSDK */,
+				FF4B5BB22435D469002C0B92 /* SnapEngageSDKTests */,
+				FF4B5BA62435D469002C0B92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4B5BA62435D469002C0B92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B5BA52435D469002C0B92 /* SnapEngageSDK.framework */,
+				FF4B5BAE2435D469002C0B92 /* SnapEngageSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4B5BA72435D469002C0B92 /* SnapEngageSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B5BA82435D469002C0B92 /* SnapEngageSDK.h */,
+				FF2A01192449DD1D009E8C75 /* Error */,
+				FFB21706243758E1004E86A3 /* Events */,
+				FFB216F124371279004E86A3 /* ChatView.swift */,
+				FF23A9752445B16D00CF37E2 /* Chat.swift */,
+				FF0DD1BF243B0EBD008382CE /* HtmlLoader.swift */,
+				FFDB62D72453001800EB433D /* ConfigurationValidator.swift */,
+				FF0DD1BD243B087B008382CE /* ChatConfiguration.swift */,
+				FF4B5BA92435D469002C0B92 /* Info.plist */,
+				FF07D20C2437794B00D45D0E /* Resources */,
+			);
+			path = SnapEngageSDK;
+			sourceTree = "<group>";
+		};
+		FF4B5BB22435D469002C0B92 /* SnapEngageSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DD1C1243B26F4008382CE /* CustomVariableTests.swift */,
+				FF4CF17A243C57DE00DA2680 /* HtmlLoaderTests.swift */,
+				FF4B5BB52435D469002C0B92 /* Info.plist */,
+			);
+			path = SnapEngageSDKTests;
+			sourceTree = "<group>";
+		};
+		FFA28A5C243C9C45002C88C6 /* ChatMessageReceived */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A5D243C9C6E002C88C6 /* ChatMessageReceivedEvent.swift */,
+				FFA28A5F243C9CDA002C88C6 /* ChatMessageReceivedEventHandlerImpl.swift */,
+			);
+			path = ChatMessageReceived;
+			sourceTree = "<group>";
+		};
+		FFA28A61243C9EE4002C88C6 /* ChatMessageSent */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A62243C9F07002C88C6 /* ChatMessageSentEvent.swift */,
+				FFA28A64243C9FD1002C88C6 /* ChatMessageSentEventHandlerImpl.swift */,
+			);
+			path = ChatMessageSent;
+			sourceTree = "<group>";
+		};
+		FFA28A66243CA289002C88C6 /* MessageSubmit */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A67243CA297002C88C6 /* MessageSubmitEvent.swift */,
+				FFA28A69243CA30C002C88C6 /* MessageSubmitEventHandlerImpl.swift */,
+			);
+			path = MessageSubmit;
+			sourceTree = "<group>";
+		};
+		FFA28A6B243CA4E5002C88C6 /* Minimize */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A6C243CA4F8002C88C6 /* MinimizeEvent.swift */,
+				FFA28A6E243CA53F002C88C6 /* MinimizeEventHandlerImpl.swift */,
+			);
+			path = Minimize;
+			sourceTree = "<group>";
+		};
+		FFA28A70243CA785002C88C6 /* Open */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A71243CA792002C88C6 /* OpenEvent.swift */,
+				FFA28A73243CA7B7002C88C6 /* OpenEventHandlerImpl.swift */,
+			);
+			path = Open;
+			sourceTree = "<group>";
+		};
+		FFA28A75243CAA04002C88C6 /* OpenProactive */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A76243CAA11002C88C6 /* OpenProactiveEvent.swift */,
+				FFA28A78243CAA36002C88C6 /* OpenProactiveEventHandlerImpl.swift */,
+			);
+			path = OpenProactive;
+			sourceTree = "<group>";
+		};
+		FFA28A7A243CABF5002C88C6 /* StartChat */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A7B243CAC06002C88C6 /* StartChatEvent.swift */,
+				FFA28A7D243CAC5B002C88C6 /* StartChatEventHandlerImpl.swift */,
+			);
+			path = StartChat;
+			sourceTree = "<group>";
+		};
+		FFA28A7F243CAD4A002C88C6 /* StartCallme */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A80243CAD58002C88C6 /* StartCallmeEvent.swift */,
+				FFA28A82243CAD7F002C88C6 /* StartCallmeEventHandlerImpl.swift */,
+			);
+			path = StartCallme;
+			sourceTree = "<group>";
+		};
+		FFA28A84243CAE6D002C88C6 /* SwitchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A85243CAE7A002C88C6 /* SwitchWidgetEvent.swift */,
+				FFA28A87243CAEA8002C88C6 /* SwitchWidgetEventHandlerImpl.swift */,
+			);
+			path = SwitchWidget;
+			sourceTree = "<group>";
+		};
+		FFA28A89243CAFCE002C88C6 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				FFA28A8A243CAFE7002C88C6 /* ButtonEvent.swift */,
+				FFA28A8C243CB17E002C88C6 /* ButtonEventHandlerImpl.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		FFB21706243758E1004E86A3 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				FFB21702243757ED004E86A3 /* EventHandler.swift */,
+				FF23A9792445D1B400CF37E2 /* OnReady */,
+				FFA28A89243CAFCE002C88C6 /* Button */,
+				FFA28A84243CAE6D002C88C6 /* SwitchWidget */,
+				FFA28A7F243CAD4A002C88C6 /* StartCallme */,
+				FFA28A7A243CABF5002C88C6 /* StartChat */,
+				FFA28A75243CAA04002C88C6 /* OpenProactive */,
+				FFA28A70243CA785002C88C6 /* Open */,
+				FFA28A6B243CA4E5002C88C6 /* Minimize */,
+				FFA28A66243CA289002C88C6 /* MessageSubmit */,
+				FFA28A61243C9EE4002C88C6 /* ChatMessageSent */,
+				FFA28A5C243C9C45002C88C6 /* ChatMessageReceived */,
+				FFB21707243758F3004E86A3 /* Close */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		FFB21707243758F3004E86A3 /* Close */ = {
+			isa = PBXGroup;
+			children = (
+				FFB21700243757C3004E86A3 /* CloseEvent.swift */,
+				FFB2170424375816004E86A3 /* CloseEventHandlerImpl.swift */,
+			);
+			path = Close;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF4B5BA02435D469002C0B92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B5BB62435D469002C0B92 /* SnapEngageSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF4B5BA42435D469002C0B92 /* SnapEngageSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4B5BB92435D469002C0B92 /* Build configuration list for PBXNativeTarget "SnapEngageSDK" */;
+			buildPhases = (
+				FF4B5BA02435D469002C0B92 /* Headers */,
+				FF4B5BA12435D469002C0B92 /* Sources */,
+				FF4B5BA22435D469002C0B92 /* Frameworks */,
+				FF4B5BA32435D469002C0B92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapEngageSDK;
+			productName = SnapEngageSDK;
+			productReference = FF4B5BA52435D469002C0B92 /* SnapEngageSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF4B5BAD2435D469002C0B92 /* SnapEngageSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4B5BBC2435D469002C0B92 /* Build configuration list for PBXNativeTarget "SnapEngageSDKTests" */;
+			buildPhases = (
+				FF4B5BAA2435D469002C0B92 /* Sources */,
+				FF4B5BAB2435D469002C0B92 /* Frameworks */,
+				FF4B5BAC2435D469002C0B92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4B5BB12435D469002C0B92 /* PBXTargetDependency */,
+			);
+			name = SnapEngageSDKTests;
+			productName = SnapEngageSDKTests;
+			productReference = FF4B5BAE2435D469002C0B92 /* SnapEngageSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4B5B9C2435D469002C0B92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Attrecto;
+				TargetAttributes = {
+					FF4B5BA42435D469002C0B92 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+					FF4B5BAD2435D469002C0B92 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = FF4B5B9F2435D469002C0B92 /* Build configuration list for PBXProject "SnapEngageSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4B5B9B2435D469002C0B92;
+			productRefGroup = FF4B5BA62435D469002C0B92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4B5BA42435D469002C0B92 /* SnapEngageSDK */,
+				FF4B5BAD2435D469002C0B92 /* SnapEngageSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4B5BA32435D469002C0B92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF07D20B243777EE00D45D0E /* index.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B5BAC2435D469002C0B92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4B5BA12435D469002C0B92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF23A9782445B42300CF37E2 /* ChatError.swift in Sources */,
+				FFA28A77243CAA11002C88C6 /* OpenProactiveEvent.swift in Sources */,
+				FFA28A7C243CAC06002C88C6 /* StartChatEvent.swift in Sources */,
+				FFDB62D82453001800EB433D /* ConfigurationValidator.swift in Sources */,
+				FFA28A79243CAA36002C88C6 /* OpenProactiveEventHandlerImpl.swift in Sources */,
+				FFA28A72243CA792002C88C6 /* OpenEvent.swift in Sources */,
+				FFA28A86243CAE7A002C88C6 /* SwitchWidgetEvent.swift in Sources */,
+				FF0DD1BE243B087B008382CE /* ChatConfiguration.swift in Sources */,
+				FFA28A65243C9FD1002C88C6 /* ChatMessageSentEventHandlerImpl.swift in Sources */,
+				FFA28A7E243CAC5B002C88C6 /* StartChatEventHandlerImpl.swift in Sources */,
+				FF0DD1C0243B0EBD008382CE /* HtmlLoader.swift in Sources */,
+				FFA28A6D243CA4F8002C88C6 /* MinimizeEvent.swift in Sources */,
+				FFA28A68243CA297002C88C6 /* MessageSubmitEvent.swift in Sources */,
+				FFA28A6F243CA53F002C88C6 /* MinimizeEventHandlerImpl.swift in Sources */,
+				FF2A011F2449DE13009E8C75 /* ErrorEventHandlerImpl.swift in Sources */,
+				FFA28A60243C9CDA002C88C6 /* ChatMessageReceivedEventHandlerImpl.swift in Sources */,
+				FFA28A6A243CA30C002C88C6 /* MessageSubmitEventHandlerImpl.swift in Sources */,
+				FFA28A74243CA7B7002C88C6 /* OpenEventHandlerImpl.swift in Sources */,
+				FFA28A81243CAD58002C88C6 /* StartCallmeEvent.swift in Sources */,
+				FFB216F224371279004E86A3 /* ChatView.swift in Sources */,
+				FFA28A88243CAEA8002C88C6 /* SwitchWidgetEventHandlerImpl.swift in Sources */,
+				FFA28A63243C9F07002C88C6 /* ChatMessageSentEvent.swift in Sources */,
+				FF23A97D2445D1F200CF37E2 /* OnReadyEventHandlerImpl.swift in Sources */,
+				FFA28A8D243CB17E002C88C6 /* ButtonEventHandlerImpl.swift in Sources */,
+				FFB21703243757ED004E86A3 /* EventHandler.swift in Sources */,
+				FFB2170524375816004E86A3 /* CloseEventHandlerImpl.swift in Sources */,
+				FF23A97B2445D1C700CF37E2 /* OnReadyEvent.swift in Sources */,
+				FF23A9762445B16D00CF37E2 /* Chat.swift in Sources */,
+				FFA28A8B243CAFE7002C88C6 /* ButtonEvent.swift in Sources */,
+				FFB21701243757C3004E86A3 /* CloseEvent.swift in Sources */,
+				FFA28A83243CAD7F002C88C6 /* StartCallmeEventHandlerImpl.swift in Sources */,
+				FF2A011D2449DDEC009E8C75 /* ErrorEvent.swift in Sources */,
+				FFA28A5E243C9C6E002C88C6 /* ChatMessageReceivedEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B5BAA2435D469002C0B92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0DD1C2243B26F4008382CE /* CustomVariableTests.swift in Sources */,
+				FF4CF17B243C57DE00DA2680 /* HtmlLoaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4B5BB12435D469002C0B92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4B5BA42435D469002C0B92 /* SnapEngageSDK */;
+			targetProxy = FF4B5BB02435D469002C0B92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF4B5BB72435D469002C0B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF4B5BB82435D469002C0B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF4B5BBA2435D469002C0B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnapEngageSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapengage.SnapEngageSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		FF4B5BBB2435D469002C0B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnapEngageSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapengage.SnapEngageSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
+		FF4B5BBD2435D469002C0B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VT3LGCX93;
+				INFOPLIST_FILE = SnapEngageSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attrecto.SnapEngageSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4B5BBE2435D469002C0B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VT3LGCX93;
+				INFOPLIST_FILE = SnapEngageSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attrecto.SnapEngageSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFE2308B24363A3E00318AF8 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Stage;
+		};
+		FFE2308C24363A3E00318AF8 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnapEngageSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapengage.SnapEngageSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Stage;
+		};
+		FFE2308D24363A3E00318AF8 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VT3LGCX93;
+				INFOPLIST_FILE = SnapEngageSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attrecto.SnapEngageSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Stage;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4B5B9F2435D469002C0B92 /* Build configuration list for PBXProject "SnapEngageSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B5BB72435D469002C0B92 /* Debug */,
+				FFE2308B24363A3E00318AF8 /* Stage */,
+				FF4B5BB82435D469002C0B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4B5BB92435D469002C0B92 /* Build configuration list for PBXNativeTarget "SnapEngageSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B5BBA2435D469002C0B92 /* Debug */,
+				FFE2308C24363A3E00318AF8 /* Stage */,
+				FF4B5BBB2435D469002C0B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4B5BBC2435D469002C0B92 /* Build configuration list for PBXNativeTarget "SnapEngageSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B5BBD2435D469002C0B92 /* Debug */,
+				FFE2308D24363A3E00318AF8 /* Stage */,
+				FF4B5BBE2435D469002C0B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF4B5B9C2435D469002C0B92 /* Project object */;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.attrecto.SnapEngage-stage</key>
+		<string>c520808c-706b-4be3-9a0d-02879bf8af9a</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>iOS Distribution</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>method</key>
+	<string>enterprise</string>
+	<key>teamID</key>
+	<string>9VT3LGCX93</string>
+</dict>
+</plist>

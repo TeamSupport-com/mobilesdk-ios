@@ -1,0 +1,123 @@
+
+<html class="mobilesdk">
+    <head>
+        <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width,  shrink-to-fit=YES" />
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        
+        [customVariables]
+        <script type="text/javascript">
+            function addcss(css, document) {
+               document = document || window.document;
+
+               var head = document.getElementsByTagName('head')[0],
+                   s = document.createElement('style');
+               s.setAttribute('type', 'text/css');
+               if (s.styleSheet) { // IE
+                   s.styleSheet.cssText = css;
+               } else {
+                   s.appendChild(document.createTextNode(css));
+               }
+               head.appendChild(s);
+           }
+        
+            (function() {
+                var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+                se.src = '[jsUrl]';
+                var done = false;
+                
+                se.onerror = function(event) {
+                    window.webkit.messageHandlers.error.postMessage( { message: event.type } );
+                };
+                
+                window.onerror = (msg, url, line, column, error) => {
+                  const message = {
+                    message: msg,
+                    url: url,
+                    line: line,
+                    column: column,
+                    error: JSON.stringify(error)
+                  }
+
+                  if (window.webkit) {
+                    window.webkit.messageHandlers.globalError.postMessage(message);
+                  }
+                };
+                
+                se.onload = se.onreadystatechange = function() {
+                    
+                    if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+                        done = true;
+                        
+                        //Code comes here
+                       
+                        
+                        var iframe = document.getElementById('designstudio-iframe'),
+                        iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+                        
+                        addcss('html #main-mobile { height:100%!important; width:100% !important; margin:0}', iframeDocument);
+                        
+                    
+                        
+                        [provider].hideButton();
+                        [provider].allowProactiveChat(false);
+                        
+                        [provider].setCallback('Close', function (type, status) {
+                            window.webkit.messageHandlers.onCloseHandler.postMessage({ type: type, status: status });
+                        });
+                        
+                        [provider].setCallback('ChatMessageReceived', function (agent, msg) {
+                            window.webkit.messageHandlers.chatMessageReceived.postMessage({ agent: agent, msg: msg });
+                        });
+                        
+                        [provider].setCallback('ChatMessageSent', function (msg) {
+                            window.webkit.messageHandlers.chatMessageSent.postMessage({ msg: msg });
+                        });
+                        
+                        [provider].setCallback('MessageSubmit', function (email, msg) {
+                            window.webkit.messageHandlers.messageSubmit.postMessage({ email: email, msg: msg });
+                        });
+                        
+                        [provider].setCallback('Minimize', function(isMinimized, chatType, boxType) {
+                            window.webkit.messageHandlers.minimize.postMessage({ isMinimized: isMinimized, chatType: chatType, boxType: boxType });
+                        });
+                        
+                        [provider].setCallback('Open', function (status) {
+                            window.webkit.messageHandlers.open.postMessage({ status: status });
+                            var iframe = document.getElementById('designstudio-iframe'),
+                                                  iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                            addcss('html #main-mobile { height:100%!important; width:100% !important; margin:0}', iframeDocument);
+                        });
+                        
+                        [provider].setCallback('StartChat', function (email, msg, type) {
+                            window.webkit.messageHandlers.startChat.postMessage({ email: email, msg: msg, type: type });
+                        });
+                        
+                        [provider].setCallback('StartCallme', function (phone) {
+                            window.webkit.messageHandlers.startCallme.postMessage({ phone: phone });
+                        });
+                        
+                        [provider].setCallback('InlineButtonClicked', function(options) {
+                            window.webkit.messageHandlers.button.postMessage({ botName: options.botName, buttonLabel: options.buttonLabel, buttonValue: options.buttonValue });
+                        });
+                        
+                        [provider].setCallback('SwitchWidget', function (newWidgetId) {
+                            window.webkit.messageHandlers.switchWidget.postMessage({ newWidgetId: newWidgetId });
+                        });
+                        
+                        [provider].setCallback('OpenProactive', function (agent, msg) {
+                            window.webkit.messageHandlers.openProactive.postMessage({ agent: agent, msg: msg });
+                        });
+                        
+                        window.webkit.messageHandlers.onReady.postMessage({ done: done });
+                    }
+                };
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+            })();
+        </script>
+    </body>
+</html>
