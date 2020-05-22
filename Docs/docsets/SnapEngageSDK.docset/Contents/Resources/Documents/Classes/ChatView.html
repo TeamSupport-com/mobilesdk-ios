@@ -1,0 +1,2815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChatView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ChatView" class="dashAnchor"></a>
+    <a title="ChatView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SnapEngageSDK Docs</a> (71% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SnapEngageSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ChatView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseEventHandler.html">BaseEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ButtonEventHandlerImpl.html">ButtonEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ButtonEventOptions.html">ButtonEventOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatConfiguration.html">ChatConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessageReceivedEventHandlerImpl.html">ChatMessageReceivedEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessageSentEventHandlerImpl.html">ChatMessageSentEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatView.html">ChatView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CloseEventHandlerImpl.html">CloseEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigurationValidator.html">ConfigurationValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorEventHandlerImpl.html">ErrorEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HtmlLoader.html">HtmlLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MessageSubmitEventHandlerImpl.html">MessageSubmitEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MinimizeEventHandlerImpl.html">MinimizeEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OnReadyEventHandlerImpl.html">OnReadyEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OpenEventHandlerImpl.html">OpenEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OpenProactiveEventHandlerImpl.html">OpenProactiveEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartCallmeEventHandlerImpl.html">StartCallmeEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartChatEventHandlerImpl.html">StartChatEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SwitchWidgetEventHandlerImpl.html">SwitchWidgetEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeakRef.html">WeakRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WidgetProvider.html">WidgetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ChatError.html">ChatError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ButtonEventHandler.html">ButtonEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ButtonEventListener.html">ButtonEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Chat.html">Chat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageReceivedEventHandler.html">ChatMessageReceivedEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageReceivedEventListener.html">ChatMessageReceivedEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageSentEventHandler.html">ChatMessageSentEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageSentEventListener.html">ChatMessageSentEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CloseEventHandler.html">CloseEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CloseEventListener.html">CloseEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorEventHandler.html">ErrorEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorEventListener.html">ErrorEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:13SnapEngageSDK12EventHandlerP">EventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MessageSubmitEventHandler.html">MessageSubmitEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MessageSubmitEventListener.html">MessageSubmitEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MinimizeEventHandler.html">MinimizeEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MinimizeEventListener.html">MinimizeEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OnReadyEventHandler.html">OnReadyEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OnReadyEventListener.html">OnReadyEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenEventHandler.html">OpenEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenEventListener.html">OpenEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenProactiveEventHandler.html">OpenProactiveEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartCallmeEventHandler.html">StartCallmeEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartCallmeEventListener.html">StartCallmeEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartChatEventHandler.html">StartChatEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartChatEventListener.html">StartChatEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SwitchWidgetEventHandler.html">SwitchWidgetEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SwitchWidgetEventListener.html">SwitchWidgetEventListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorResponse.html">ErrorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorResponse/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WidgetAvailability.html">WidgetAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WidgetAvailability/Data.html">– Data</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ChatView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ChatView</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="kt"><a href="../Protocols/Chat.html">Chat</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ChatView</span><span class="p">:</span> <span class="kt">WKNavigationDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ChatView</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OnReadyEventListener.html">OnReadyEventListener</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>ChatView - Wrapper view that hides the real implementation from the user and prevent to do any change on it.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/EventHandlers"></a>
+                <a name="//apple_ref/swift/Section/EventHandlers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/EventHandlers"></a>
+                  <h3 class="section-name"><p>EventHandlers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC17closeEventHandlerAA05ClosegH0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/closeEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC17closeEventHandlerAA05ClosegH0_pvp">closeEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">closeEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CloseEventHandler.html">CloseEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC31chatMessageReceivedEventHandlerAA0dghiJ0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/chatMessageReceivedEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC31chatMessageReceivedEventHandlerAA0dghiJ0_pvp">chatMessageReceivedEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">chatMessageReceivedEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ChatMessageReceivedEventHandler.html">ChatMessageReceivedEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC27chatMessageSentEventHandlerAA0dghiJ0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/chatMessageSentEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC27chatMessageSentEventHandlerAA0dghiJ0_pvp">chatMessageSentEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">chatMessageSentEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ChatMessageSentEventHandler.html">ChatMessageSentEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC25messageSubmitEventHandlerAA07MessageghI0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/messageSubmitEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC25messageSubmitEventHandlerAA07MessageghI0_pvp">messageSubmitEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">messageSubmitEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MessageSubmitEventHandler.html">MessageSubmitEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC20minimizeEventHandlerAA08MinimizegH0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/minimizeEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC20minimizeEventHandlerAA08MinimizegH0_pvp">minimizeEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">minimizeEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MinimizeEventHandler.html">MinimizeEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC16openEventHandlerAA04OpengH0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/openEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC16openEventHandlerAA04OpengH0_pvp">openEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">openEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenEventHandler.html">OpenEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC25openProactiveEventHandlerAA04OpenghI0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/openProactiveEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC25openProactiveEventHandlerAA04OpenghI0_pvp">openProactiveEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">openProactiveEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenProactiveEventHandler.html">OpenProactiveEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC05startD12EventHandlerAA05StartdgH0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/startChatEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC05startD12EventHandlerAA05StartdgH0_pvp">startChatEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">startChatEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StartChatEventHandler.html">StartChatEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC23startCallmeEventHandlerAA05StartghI0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/startCallmeEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC23startCallmeEventHandlerAA05StartghI0_pvp">startCallmeEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">startCallmeEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StartCallmeEventHandler.html">StartCallmeEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC24switchWidgetEventHandlerAA06SwitchghI0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/switchWidgetEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC24switchWidgetEventHandlerAA06SwitchghI0_pvp">switchWidgetEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">switchWidgetEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SwitchWidgetEventHandler.html">SwitchWidgetEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC18buttonEventHandlerAA06ButtongH0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/buttonEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC18buttonEventHandlerAA06ButtongH0_pvp">buttonEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">buttonEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ButtonEventHandler.html">ButtonEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC19onReadyEventHandlerAA02OnghI0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/onReadyEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC19onReadyEventHandlerAA02OnghI0_pvp">onReadyEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">onReadyEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OnReadyEventHandler.html">OnReadyEventHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC17errorEventHandlerAA05ErrorgH4ImplCvp"></a>
+                    <a name="//apple_ref/swift/Property/errorEventHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC17errorEventHandlerAA05ErrorgH4ImplCvp">errorEventHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">let</span> <span class="nv">errorEventHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/ErrorEventHandlerImpl.html">ErrorEventHandlerImpl</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Variables"></a>
+                <a name="//apple_ref/swift/Section/Variables" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Variables"></a>
+                  <h3 class="section-name"><p>Variables</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC6bridge33_C6F589F4085529DFC3E424088F491368LLSDySSSo22WKScriptMessageHandler_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/bridge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC6bridge33_C6F589F4085529DFC3E424088F491368LLSDySSSo22WKScriptMessageHandler_pGvp">bridge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This dictionary describes which eventHandler is responsible for a javaScript message</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bridge</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">WKScriptMessageHandler</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC03webE033_C6F589F4085529DFC3E424088F491368LLSo05WKWebE0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/webView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC03webE033_C6F589F4085529DFC3E424088F491368LLSo05WKWebE0CSgvp">webView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC13configuration33_C6F589F4085529DFC3E424088F491368LLAA0D13ConfigurationCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC13configuration33_C6F589F4085529DFC3E424088F491368LLAA0D13ConfigurationCSgvp">configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/ChatConfiguration.html">ChatConfiguration</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC10htmlLoader33_C6F589F4085529DFC3E424088F491368LLAA04HtmlG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/htmlLoader" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC10htmlLoader33_C6F589F4085529DFC3E424088F491368LLAA04HtmlG0Cvp">htmlLoader</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">htmlLoader</span><span class="p">:</span> <span class="kt"><a href="../Classes/HtmlLoader.html">HtmlLoader</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC22configurationValidator33_C6F589F4085529DFC3E424088F491368LLAA013ConfigurationG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/configurationValidator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC22configurationValidator33_C6F589F4085529DFC3E424088F491368LLAA013ConfigurationG0Cvp">configurationValidator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">configurationValidator</span><span class="p">:</span> <span class="kt"><a href="../Classes/ConfigurationValidator.html">ConfigurationValidator</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC14pendingActions33_C6F589F4085529DFC3E424088F491368LLSayytSgycGvp"></a>
+                    <a name="//apple_ref/swift/Property/pendingActions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC14pendingActions33_C6F589F4085529DFC3E424088F491368LLSayytSgycGvp">pendingActions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The JavaScript actions are stored in this array, until the chat is ready, then they are executed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">pendingActions</span><span class="p">:</span> <span class="p">[()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">?]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public"></a>
+                <a name="//apple_ref/swift/Section/Public" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public"></a>
+                  <h3 class="section-name"><p>Public</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(py)isReady"></a>
+                    <a name="//apple_ref/swift/Property/isReady" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(py)isReady">isReady</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This variable represents that the chat has been loaded and ready to evaluate javascripts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isReady</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(py)isWebViewTransparent"></a>
+                    <a name="//apple_ref/swift/Property/isWebViewTransparent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(py)isWebViewTransparent">isWebViewTransparent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When this variable is true, the SDK sets the underlying webview&rsquo;s isOpaque to false, and backgroundColor to clear</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">isWebViewTransparent</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)initWithFrame:"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)initWithFrame:">init(frame:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)initWithCoder:">init(coder:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC23checkWidgetAvailability8widgetId10completionySSSg_ys6ResultOyAA0gH0Vs5Error_pGctF"></a>
+                    <a name="//apple_ref/swift/Method/checkWidgetAvailability(widgetId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC23checkWidgetAvailability8widgetId10completionySSSg_ys6ResultOyAA0gH0Vs5Error_pGctF">checkWidgetAvailability(widgetId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>You can get the status of the widget</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">checkWidgetAvailability</span><span class="p">(</span><span class="nv">widgetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/WidgetAvailability.html">WidgetAvailability</a></span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>widgetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional parameter, if it&rsquo;s nil, the ChatConfiguration&rsquo;s widgetId is used</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion cloesure with a result parameter. The result can contain the WidgetAvailability or an Error, which can be a ChatError</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)setConfiguration:"></a>
+                    <a name="//apple_ref/swift/Method/setConfiguration(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)setConfiguration:">setConfiguration(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setter to load a specific configuration to this View.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setConfiguration</span><span class="p">(</span><span class="n">_</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/ChatConfiguration.html">ChatConfiguration</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ChatConfiguration that specifies the chat</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)startLinkWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/startLink(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)startLinkWithCompletion:">startLink(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows the chat view, when the view is ready.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startLink</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultCallback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback that invokes after the javascript evaluated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)showButtonWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/showButton(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)showButtonWithCompletion:">showButton(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show the chat button, when the view is ready.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">showButton</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultCallback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback that invokes after the javascript evaluated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)hideButtonWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/hideButton(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)hideButtonWithCompletion:">hideButton(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hides the chat button, when the view is ready.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">hideButton</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultCallback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback that invokes after the javascript evaluated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)reload"></a>
+                    <a name="//apple_ref/swift/Method/reload()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)reload">reload()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reloads the chat with the current configuration, sets the isReady property to false</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">reload</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SnapEngageSDK@objc(cs)ChatView(im)clearAllCookiesWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/clearAllCookies(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SnapEngageSDK@objc(cs)ChatView(im)clearAllCookiesWithCompletion:">clearAllCookies(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clears the cookies, when the view is ready.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">clearAllCookies</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultCallback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback that invokes after the javascript evaluated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private"></a>
+                <a name="//apple_ref/swift/Section/Private" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private"></a>
+                  <h3 class="section-name"><p>Private</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC10commonInit33_C6F589F4085529DFC3E424088F491368LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/commonInit()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC10commonInit33_C6F589F4085529DFC3E424088F491368LLyyF">commonInit()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called by both initializers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">commonInit</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC11setupBridge33_C6F589F4085529DFC3E424088F491368LL6configySo05WKWebE13ConfigurationC_tF"></a>
+                    <a name="//apple_ref/swift/Method/setupBridge(config:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC11setupBridge33_C6F589F4085529DFC3E424088F491368LL6configySo05WKWebE13ConfigurationC_tF">setupBridge(config:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It registers every eventHandler to the webView</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">setupBridge</span><span class="p">(</span><span class="nv">config</span><span class="p">:</span> <span class="kt">WKWebViewConfiguration</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC08setupWebE033_C6F589F4085529DFC3E424088F491368LL6configySo05WKWebE13ConfigurationC_tF"></a>
+                    <a name="//apple_ref/swift/Method/setupWebView(config:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC08setupWebE033_C6F589F4085529DFC3E424088F491368LL6configySo05WKWebE13ConfigurationC_tF">setupWebView(config:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It configures the webView for the desired behaviour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">setupWebView</span><span class="p">(</span><span class="nv">config</span><span class="p">:</span> <span class="kt">WKWebViewConfiguration</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>WKWebViewConfiguration - Configuration of the WKWebView</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC4load33_C6F589F4085529DFC3E424088F491368LL4withyAA0D13ConfigurationCSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/load(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC4load33_C6F589F4085529DFC3E424088F491368LL4withyAA0D13ConfigurationCSg_tF">load(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It loads the chat with the given configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">load</span><span class="p">(</span><span class="n">with</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/ChatConfiguration.html">ChatConfiguration</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ChatConfiguration that specifies the chat</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC29runOrSaveJavaScriptOnProvider33_C6F589F4085529DFC3E424088F491368LL6script10completionySS_yypSg_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/runOrSaveJavaScriptOnProvider(script:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC29runOrSaveJavaScriptOnProvider33_C6F589F4085529DFC3E424088F491368LL6script10completionySS_yypSg_s5Error_pSgtcSgtF">runOrSaveJavaScriptOnProvider(script:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the chat is ready, it runs a javaScript on the chat.
+If the chat is not ready, it saves the action to the pendingActions variable
+It appends the provider prefix to the script.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">runOrSaveJavaScriptOnProvider</span><span class="p">(</span><span class="nv">script</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>script</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>JavaScript without the provider prefix, that we would like to run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It&rsquo;s called when the action is executed, or when there is no ChatConfiguration</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK8ChatViewC17runPendingActions33_C6F589F4085529DFC3E424088F491368LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/runPendingActions()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK8ChatViewC17runPendingActions33_C6F589F4085529DFC3E424088F491368LLyyF">runPendingActions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It&rsquo;s called when the chat is ready, and runs the pending actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">runPendingActions</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)webView:didFailProvisionalNavigation:withError:"></a>
+                    <a name="//apple_ref/swift/Method/webView(_:didFailProvisionalNavigation:withError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)webView:didFailProvisionalNavigation:withError:">webView(_:<wbr>didFailProvisionalNavigation:<wbr>withError:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">webView</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">,</span> <span class="n">didFailProvisionalNavigation</span> <span class="nv">navigation</span><span class="p">:</span> <span class="kt">WKNavigation</span><span class="o">!</span><span class="p">,</span> <span class="n">withError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)webView:didFailNavigation:withError:"></a>
+                    <a name="//apple_ref/swift/Method/webView(_:didFail:withError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)webView:didFailNavigation:withError:">webView(_:<wbr>didFail:<wbr>withError:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">webView</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">,</span> <span class="n">didFail</span> <span class="nv">navigation</span><span class="p">:</span> <span class="kt">WKNavigation</span><span class="o">!</span><span class="p">,</span> <span class="n">withError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)webView:decidePolicyForNavigationAction:decisionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/webView(_:decidePolicyFor:decisionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)webView:decidePolicyForNavigationAction:decisionHandler:">webView(_:<wbr>decidePolicyFor:<wbr>decisionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">webView</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">,</span> <span class="n">decidePolicyFor</span> <span class="nv">navigationAction</span><span class="p">:</span> <span class="kt">WKNavigationAction</span><span class="p">,</span> <span class="nv">decisionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">WKNavigationActionPolicy</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)onReady"></a>
+                    <a name="//apple_ref/swift/Method/onReady()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)onReady">onReady()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It&rsquo;s called when the JavaScript loaded successfully, sets the isReady to true, and runs the pending actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">onReady</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithErrorListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(errorListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithErrorListener:">add(errorListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given ErrorEventListener to the ErrorEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">errorListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ErrorEventListener.html">ErrorEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithErrorListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(errorListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithErrorListener:">remove(errorListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given ErrorEventListener from the ErrorEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">errorListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ErrorEventListener.html">ErrorEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithButtonListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(buttonListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithButtonListener:">add(buttonListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given ButtonEventListener to the onReadyEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">buttonListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ButtonEventListener.html">ButtonEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithButtonListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(buttonListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithButtonListener:">remove(buttonListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given ButtonEventListener from the onReadyEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">buttonListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ButtonEventListener.html">ButtonEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithChatMessageReceivedListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(chatMessageReceivedListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithChatMessageReceivedListener:">add(chatMessageReceivedListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given ChatMessageReceivedEventListener to the ChatMessageReceivedEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">chatMessageReceivedListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ChatMessageReceivedEventListener.html">ChatMessageReceivedEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithChatMessageReceivedListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(chatMessageReceivedListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithChatMessageReceivedListener:">remove(chatMessageReceivedListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given ChatMessageReceivedEventListener from the ChatMessageReceivedEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">chatMessageReceivedListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ChatMessageReceivedEventListener.html">ChatMessageReceivedEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithChatMessageSentListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(chatMessageSentListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithChatMessageSentListener:">add(chatMessageSentListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given ChatMessageSentEventListener to the ChatMessageSentEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">chatMessageSentListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ChatMessageSentEventListener.html">ChatMessageSentEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithChatMessageSentListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(chatMessageSentListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithChatMessageSentListener:">remove(chatMessageSentListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given ChatMessageSentEventListener from the ChatMessageSentEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">chatMessageSentListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ChatMessageSentEventListener.html">ChatMessageSentEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithCloseListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(closeListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithCloseListener:">add(closeListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given CloseEventListener to the CloseEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">closeListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CloseEventListener.html">CloseEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithCloseListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(closeListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithCloseListener:">remove(closeListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given CloseEventListener from the CloseEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">closeListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CloseEventListener.html">CloseEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithMessageSubmitListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(messageSubmitListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithMessageSubmitListener:">add(messageSubmitListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given MessageSubmitEventListener to the MessageSubmitEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">messageSubmitListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MessageSubmitEventListener.html">MessageSubmitEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithMessageSubmitListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(messageSubmitListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithMessageSubmitListener:">remove(messageSubmitListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given MessageSubmitEventListener from the MessageSubmitEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">messageSubmitListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MessageSubmitEventListener.html">MessageSubmitEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithMinimizeListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(minimizeListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithMinimizeListener:">add(minimizeListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given MinimizeEventListener to the MinimizeEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">minimizeListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MinimizeEventListener.html">MinimizeEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithMinimizeListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(minimizeListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithMinimizeListener:">remove(minimizeListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given MinimizeEventListener from the MinimizeEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">minimizeListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MinimizeEventListener.html">MinimizeEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addOnReadyListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(onReadyListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addOnReadyListener:">add(onReadyListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given OnReadyEventListener to the onReadyEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">onReadyListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OnReadyEventListener.html">OnReadyEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeOnReadyListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(onReadyListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeOnReadyListener:">remove(onReadyListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given OnReadyEventListener from the onReadyEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">onReadyListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OnReadyEventListener.html">OnReadyEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithOpenListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(openListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithOpenListener:">add(openListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given OpenEventListener to the OpenEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">openListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenEventListener.html">OpenEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithOpenListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(openListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithOpenListener:">remove(openListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given OpenEventListener from the OpenEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">openListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenEventListener.html">OpenEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithOpenProactiveListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(openProactiveListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithOpenProactiveListener:">add(openProactiveListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given OpenProactiveEventListener to the OpenProactiveEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">openProactiveListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithOpenProactiveListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(openProactiveListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithOpenProactiveListener:">remove(openProactiveListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given OpenProactiveEventListener from the OpenProactiveEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">openProactiveListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithStartCallmeListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(startCallmeListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithStartCallmeListener:">add(startCallmeListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given StartCallmeEventListener to the SwitchWidgetEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">startCallmeListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StartCallmeEventListener.html">StartCallmeEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithStartCallmeListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(startCallmeListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithStartCallmeListener:">remove(startCallmeListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given StartCallmeEventListener from the SwitchWidgetEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">startCallmeListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StartCallmeEventListener.html">StartCallmeEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithStartChatListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(startChatListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithStartChatListener:">add(startChatListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given StartChatEventListener to the StartChatEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">startChatListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StartChatEventListener.html">StartChatEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithStartChatListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(startChatListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithStartChatListener:">remove(startChatListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given StartChatEventListener from the StartChatEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">startChatListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StartChatEventListener.html">StartChatEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithSwitchWidgetListener:"></a>
+                    <a name="//apple_ref/swift/Method/add(switchWidgetListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)addWithSwitchWidgetListener:">add(switchWidgetListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the given SwitchWidgetEventListener to the SwitchWidgetEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">switchWidgetListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SwitchWidgetEventListener.html">SwitchWidgetEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithSwitchWidgetListener:"></a>
+                    <a name="//apple_ref/swift/Method/remove(switchWidgetListener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SnapEngageSDK@objc(cs)ChatView(im)removeWithSwitchWidgetListener:">remove(switchWidgetListener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given SwitchWidgetEventListener from the SwitchWidgetEventHandler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">switchWidgetListener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SwitchWidgetEventListener.html">SwitchWidgetEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://snapengage.com/" target="_blank" rel="external">SnapEngage</a>. All rights reserved. (Last updated: 2020-05-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

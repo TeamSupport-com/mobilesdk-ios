@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChatError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/ChatError" class="dashAnchor"></a>
+    <a title="ChatError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SnapEngageSDK Docs</a> (71% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SnapEngageSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ChatError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseEventHandler.html">BaseEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ButtonEventHandlerImpl.html">ButtonEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ButtonEventOptions.html">ButtonEventOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatConfiguration.html">ChatConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessageReceivedEventHandlerImpl.html">ChatMessageReceivedEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessageSentEventHandlerImpl.html">ChatMessageSentEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatView.html">ChatView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CloseEventHandlerImpl.html">CloseEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigurationValidator.html">ConfigurationValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorEventHandlerImpl.html">ErrorEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HtmlLoader.html">HtmlLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MessageSubmitEventHandlerImpl.html">MessageSubmitEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MinimizeEventHandlerImpl.html">MinimizeEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OnReadyEventHandlerImpl.html">OnReadyEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OpenEventHandlerImpl.html">OpenEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OpenProactiveEventHandlerImpl.html">OpenProactiveEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartCallmeEventHandlerImpl.html">StartCallmeEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartChatEventHandlerImpl.html">StartChatEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SwitchWidgetEventHandlerImpl.html">SwitchWidgetEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeakRef.html">WeakRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WidgetProvider.html">WidgetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ChatError.html">ChatError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ButtonEventHandler.html">ButtonEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ButtonEventListener.html">ButtonEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Chat.html">Chat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageReceivedEventHandler.html">ChatMessageReceivedEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageReceivedEventListener.html">ChatMessageReceivedEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageSentEventHandler.html">ChatMessageSentEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageSentEventListener.html">ChatMessageSentEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CloseEventHandler.html">CloseEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CloseEventListener.html">CloseEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorEventHandler.html">ErrorEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorEventListener.html">ErrorEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:13SnapEngageSDK12EventHandlerP">EventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MessageSubmitEventHandler.html">MessageSubmitEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MessageSubmitEventListener.html">MessageSubmitEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MinimizeEventHandler.html">MinimizeEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MinimizeEventListener.html">MinimizeEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OnReadyEventHandler.html">OnReadyEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OnReadyEventListener.html">OnReadyEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenEventHandler.html">OpenEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenEventListener.html">OpenEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenProactiveEventHandler.html">OpenProactiveEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartCallmeEventHandler.html">StartCallmeEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartCallmeEventListener.html">StartCallmeEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartChatEventHandler.html">StartChatEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartChatEventListener.html">StartChatEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SwitchWidgetEventHandler.html">SwitchWidgetEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SwitchWidgetEventListener.html">SwitchWidgetEventListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorResponse.html">ErrorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorResponse/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WidgetAvailability.html">WidgetAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WidgetAvailability/Data.html">– Data</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ChatError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ChatError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ChatError</span><span class="p">:</span> <span class="kt">LocalizedError</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO02noD13ConfigurationyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noChatConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO02noD13ConfigurationyA2CmF">noChatConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noChatConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO22javaScriptCouldNotLoadyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/javaScriptCouldNotLoad" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO22javaScriptCouldNotLoadyA2CmF">javaScriptCouldNotLoad</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">javaScriptCouldNotLoad</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO010javaScriptE0yACSSSg_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/javaScriptError(message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO010javaScriptE0yACSSSg_tcACmF">javaScriptError(message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">javaScriptError</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO15invalidProvideryACSS_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidProvider(provider:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO15invalidProvideryACSS_tcACmF">invalidProvider(provider:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">invalidProvider</span><span class="p">(</span><span class="nv">provider</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO15invalidWidgetIdyACSS_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidWidgetId(widgetId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO15invalidWidgetIdyACSS_tcACmF">invalidWidgetId(widgetId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">invalidWidgetId</span><span class="p">(</span><span class="nv">widgetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO19invalidEntryPageUrlyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidEntryPageUrl(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO19invalidEntryPageUrlyAC10Foundation3URLV_tcACmF">invalidEntryPageUrl(url:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">invalidEntryPageUrl</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO12invalidJsUrlyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidJsUrl(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO12invalidJsUrlyAC10Foundation3URLV_tcACmF">invalidJsUrl(url:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">invalidJsUrl</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO18invalidInstanceUrlyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidInstanceUrl(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO18invalidInstanceUrlyAC10Foundation3URLV_tcACmF">invalidInstanceUrl(url:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">invalidInstanceUrl</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO04httpE0yAC10Foundation3URLV_SiSgtcACmF"></a>
+                    <a name="//apple_ref/swift/Element/httpError(url:statusCode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO04httpE0yAC10Foundation3URLV_SiSgtcACmF">httpError(url:<wbr>statusCode:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">httpError</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO6noDatayAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/noData(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO6noDatayAC10Foundation3URLV_tcACmF">noData(url:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">noData</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK9ChatErrorO03apiE0yACSi_SStcACmF"></a>
+                    <a name="//apple_ref/swift/Element/apiError(statusCode:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK9ChatErrorO03apiE0yACSi_SStcACmF">apiError(statusCode:<wbr>message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">apiError</span><span class="p">(</span><span class="nv">statusCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation14LocalizedErrorP16errorDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation14LocalizedErrorP16errorDescriptionSSSgvp">errorDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://snapengage.com/" target="_blank" rel="external">SnapEngage</a>. All rights reserved. (Last updated: 2020-05-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

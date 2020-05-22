@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OpenProactiveEventHandlerImpl Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/OpenProactiveEventHandlerImpl" class="dashAnchor"></a>
+    <a title="OpenProactiveEventHandlerImpl Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SnapEngageSDK Docs</a> (71% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SnapEngageSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        OpenProactiveEventHandlerImpl Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseEventHandler.html">BaseEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ButtonEventHandlerImpl.html">ButtonEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ButtonEventOptions.html">ButtonEventOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatConfiguration.html">ChatConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessageReceivedEventHandlerImpl.html">ChatMessageReceivedEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessageSentEventHandlerImpl.html">ChatMessageSentEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatView.html">ChatView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CloseEventHandlerImpl.html">CloseEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigurationValidator.html">ConfigurationValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorEventHandlerImpl.html">ErrorEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HtmlLoader.html">HtmlLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MessageSubmitEventHandlerImpl.html">MessageSubmitEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MinimizeEventHandlerImpl.html">MinimizeEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OnReadyEventHandlerImpl.html">OnReadyEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OpenEventHandlerImpl.html">OpenEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OpenProactiveEventHandlerImpl.html">OpenProactiveEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartCallmeEventHandlerImpl.html">StartCallmeEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartChatEventHandlerImpl.html">StartChatEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SwitchWidgetEventHandlerImpl.html">SwitchWidgetEventHandlerImpl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeakRef.html">WeakRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WidgetProvider.html">WidgetProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ChatError.html">ChatError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ButtonEventHandler.html">ButtonEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ButtonEventListener.html">ButtonEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Chat.html">Chat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageReceivedEventHandler.html">ChatMessageReceivedEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageReceivedEventListener.html">ChatMessageReceivedEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageSentEventHandler.html">ChatMessageSentEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChatMessageSentEventListener.html">ChatMessageSentEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CloseEventHandler.html">CloseEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CloseEventListener.html">CloseEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorEventHandler.html">ErrorEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorEventListener.html">ErrorEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:13SnapEngageSDK12EventHandlerP">EventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MessageSubmitEventHandler.html">MessageSubmitEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MessageSubmitEventListener.html">MessageSubmitEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MinimizeEventHandler.html">MinimizeEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MinimizeEventListener.html">MinimizeEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OnReadyEventHandler.html">OnReadyEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OnReadyEventListener.html">OnReadyEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenEventHandler.html">OpenEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenEventListener.html">OpenEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenProactiveEventHandler.html">OpenProactiveEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartCallmeEventHandler.html">StartCallmeEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartCallmeEventListener.html">StartCallmeEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartChatEventHandler.html">StartChatEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StartChatEventListener.html">StartChatEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SwitchWidgetEventHandler.html">SwitchWidgetEventHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SwitchWidgetEventListener.html">SwitchWidgetEventListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorResponse.html">ErrorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorResponse/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WidgetAvailability.html">WidgetAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WidgetAvailability/Data.html">– Data</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SnapEngageSDK24ChatViewActionCompletiona">ChatViewActionCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OpenProactiveEventHandlerImpl</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">OpenProactiveEventHandlerImpl</span> <span class="p">:</span> <span class="kt"><a href="../Classes/BaseEventHandler.html">BaseEventHandler</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a></span><span class="o">&gt;</span><span class="p">,</span> <span class="kt"><a href="../Protocols/OpenProactiveEventHandler.html">OpenProactiveEventHandler</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK29OpenProactiveEventHandlerImplC6remove8listeneryAA0deF8Listener_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(listener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK29OpenProactiveEventHandlerImplC6remove8listeneryAA0deF8Listener_p_tF">remove(listener:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given ButtonEventListener from this handler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">listener</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OpenProactiveEventListener.html">OpenProactiveEventListener</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the listener you want to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SnapEngageSDK29OpenProactiveEventHandlerImplC21userContentController_10didReceiveySo06WKUserjK0C_So15WKScriptMessageCtF"></a>
+                    <a name="//apple_ref/swift/Method/userContentController(_:didReceive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SnapEngageSDK29OpenProactiveEventHandlerImplC21userContentController_10didReceiveySo06WKUserjK0C_So15WKScriptMessageCtF">userContentController(_:<wbr>didReceive:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bridge method where the data comes from Javascript. It posted to all listeners</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userContentController</span><span class="p">(</span><span class="n">_</span> <span class="nv">userContentController</span><span class="p">:</span> <span class="kt">WKUserContentController</span><span class="p">,</span> <span class="n">didReceive</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">WKScriptMessage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://snapengage.com/" target="_blank" rel="external">SnapEngage</a>. All rights reserved. (Last updated: 2020-05-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

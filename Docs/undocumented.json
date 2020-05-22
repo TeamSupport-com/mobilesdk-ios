@@ -1,0 +1,530 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 11,
+      "symbol": "ChatViewActionCompletion",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 15,
+      "symbol": "Chat.isReady",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 16,
+      "symbol": "Chat.setConfiguration(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 17,
+      "symbol": "Chat.startLink(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 18,
+      "symbol": "Chat.hideButton(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 19,
+      "symbol": "Chat.showButton(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 20,
+      "symbol": "Chat.clearAllCookies(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Chat.swift",
+      "line": 21,
+      "symbol": "Chat.reload()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 13,
+      "symbol": "ChatConfiguration.widgetId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 14,
+      "symbol": "ChatConfiguration.baseJsUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 15,
+      "symbol": "ChatConfiguration.provider",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 16,
+      "symbol": "ChatConfiguration.entryPageUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 17,
+      "symbol": "ChatConfiguration.baseInstanceUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 18,
+      "symbol": "ChatConfiguration.customVariables",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatConfiguration.swift",
+      "line": 20,
+      "symbol": "ChatConfiguration.jsUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 17,
+      "symbol": "ChatView.closeEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 18,
+      "symbol": "ChatView.chatMessageReceivedEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 19,
+      "symbol": "ChatView.chatMessageSentEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 20,
+      "symbol": "ChatView.messageSubmitEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 21,
+      "symbol": "ChatView.minimizeEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 22,
+      "symbol": "ChatView.openEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 23,
+      "symbol": "ChatView.openProactiveEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 24,
+      "symbol": "ChatView.startChatEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 25,
+      "symbol": "ChatView.startCallmeEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 26,
+      "symbol": "ChatView.switchWidgetEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 27,
+      "symbol": "ChatView.buttonEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 28,
+      "symbol": "ChatView.onReadyEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 29,
+      "symbol": "ChatView.errorEventHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 51,
+      "symbol": "ChatView.webView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 52,
+      "symbol": "ChatView.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 53,
+      "symbol": "ChatView.htmlLoader",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 54,
+      "symbol": "ChatView.configurationValidator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 72,
+      "symbol": "ChatView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 77,
+      "symbol": "ChatView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 232,
+      "symbol": "ChatView.webView(_:didFailProvisionalNavigation:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 243,
+      "symbol": "ChatView.webView(_:didFail:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ChatView.swift",
+      "line": 247,
+      "symbol": "ChatView.webView(_:decidePolicyFor:decisionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ConfigurationValidator.swift",
+      "line": 50,
+      "symbol": "URL.isHttpsUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ConfigurationValidator.swift",
+      "line": 54,
+      "symbol": "URL.isHttpUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/ConfigurationValidator.swift",
+      "line": 58,
+      "symbol": "URL.isNetwokUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 12,
+      "symbol": "ChatError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 13,
+      "symbol": "ChatError.noChatConfiguration",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 14,
+      "symbol": "ChatError.javaScriptCouldNotLoad",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 15,
+      "symbol": "ChatError.javaScriptError(message:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 16,
+      "symbol": "ChatError.invalidProvider(provider:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 17,
+      "symbol": "ChatError.invalidWidgetId(widgetId:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 18,
+      "symbol": "ChatError.invalidEntryPageUrl(url:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 19,
+      "symbol": "ChatError.invalidJsUrl(url:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 20,
+      "symbol": "ChatError.invalidInstanceUrl(url:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 21,
+      "symbol": "ChatError.httpError(url:statusCode:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 22,
+      "symbol": "ChatError.noData(url:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 23,
+      "symbol": "ChatError.apiError(statusCode:message:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Error/ChatError.swift",
+      "line": 26,
+      "symbol": "ChatError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/Button/ButtonEvent.swift",
+      "line": 31,
+      "symbol": "ButtonEventOptions.init(botName:buttonLabel:buttonValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/EventHandler.swift",
+      "line": 37,
+      "symbol": "WeakRef.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/EventHandler.swift",
+      "line": 39,
+      "symbol": "WeakRef.init(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/OpenProactive/OpenProactiveEventHandlerImpl.swift",
+      "line": 12,
+      "symbol": "OpenProactiveEventHandlerImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/StartCallme/StartCallmeEventHandlerImpl.swift",
+      "line": 12,
+      "symbol": "StartCallmeEventHandlerImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/StartChat/StartChatEventHandlerImpl.swift",
+      "line": 12,
+      "symbol": "StartChatEventHandlerImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Events/SwitchWidget/SwitchWidgetEventHandlerImpl.swift",
+      "line": 12,
+      "symbol": "SwitchWidgetEventHandlerImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/ErrorResponse.swift",
+      "line": 11,
+      "symbol": "ErrorResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/ErrorResponse.swift",
+      "line": 12,
+      "symbol": "ErrorResponse.statusCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/ErrorResponse.swift",
+      "line": 13,
+      "symbol": "ErrorResponse.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/ErrorResponse.swift",
+      "line": 15,
+      "symbol": "ErrorResponse.Error",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/ErrorResponse.swift",
+      "line": 16,
+      "symbol": "ErrorResponse.Error.message",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 11,
+      "symbol": "WidgetAvailability",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 12,
+      "symbol": "WidgetAvailability.statusCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 13,
+      "symbol": "WidgetAvailability.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 15,
+      "symbol": "WidgetAvailability.Data",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 16,
+      "symbol": "WidgetAvailability.Data.widgetId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 17,
+      "symbol": "WidgetAvailability.Data.online",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 18,
+      "symbol": "WidgetAvailability.Data.emailRequired",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 19,
+      "symbol": "WidgetAvailability.Data.messageRequired",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetAvailability.swift",
+      "line": 20,
+      "symbol": "WidgetAvailability.Data.screenshotRequired",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK/SnapEngageSDK/Networking/WidgetProvider.swift",
+      "line": 17,
+      "symbol": "WidgetProvider.init(baseUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/kristofvarga/snapengage-ios/SnapEngageSDK"
+}
