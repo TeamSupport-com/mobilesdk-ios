@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :path => '.' }
+  spec.source = { :git => 'git@github.com:SnapEngage/mobilesdk-ios.git' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,9 +87,12 @@ Pod::Spec.new do |spec|
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
-  #
+  
+  spec.exclude_files = 'SnapEngageSDK/SnapEngageSDK/*.plist'
 
-  spec.source_files = "SnapEngageSDK/SnapEngageSDK"
+  #spec.source_files = "SnapEngageSDK/SnapEngageSDK"
+  spec.source_files  = "SnapEngageSDK/SnapEngageSDK/SnapEngageSDK*"
+  
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
