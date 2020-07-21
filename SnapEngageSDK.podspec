@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SnapEngageSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "desc."
   spec.homepage     = "https://snapengage.com/"
 
@@ -64,6 +64,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios
 
   spec.platform     = :ios, "10.0"
+  # spec.ios.vendored_frameworks = 'SnapEngageSDK.framework'
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "10.0"
@@ -91,7 +92,8 @@ Pod::Spec.new do |spec|
   spec.exclude_files = 'SnapEngageSDK/SnapEngageSDK/*.plist'
 
   #spec.source_files = "SnapEngageSDK/SnapEngageSDK"
-  spec.source_files  = "SnapEngageSDK/SnapEngageSDK/SnapEngageSDK*"
+  spec.source_files  = "SnapEngageSDK/SnapEngageSDK/**/*.{h,m,swift}"
+  spec.public_header_files = "SnapEngageSDK/SnapEngageSDK/**/*.h"
   
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
