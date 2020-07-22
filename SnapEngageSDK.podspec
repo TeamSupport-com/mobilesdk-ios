@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SnapEngageSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "desc."
   spec.homepage     = "https://snapengage.com/"
 
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   spec.exclude_files = 'SnapEngageSDK/SnapEngageSDK/*.plist'
 
   #spec.source_files = "SnapEngageSDK/SnapEngageSDK"
-  spec.source_files  = "SnapEngageSDK/SnapEngageSDK/**/*.{h,m,swift}"
+  spec.source_files  = "SnapEngageSDK/SnapEngageSDK/**/*.{h,m,swift,html}"
   spec.public_header_files = "SnapEngageSDK/SnapEngageSDK/**/*.h"
   
 
