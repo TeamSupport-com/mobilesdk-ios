@@ -15,11 +15,25 @@ internal class HtmlLoader {
     /// - Parameters:
     ///     - configuration: ChatConfiguration that specifies the chat
     internal func loadHtml(with configuration: ChatConfiguration) -> String? {
-        guard
-            let path = Bundle(for: Self.self).path(forResource: "index", ofType: "html"),
-            var html = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
-        else {
+        
+        let frameworkBundle = Bundle(for: HtmlLoader.self)
+        guard let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("ChatSDKBundle.bundle") else {
             return nil
+        }
+        
+        let resourceBundle = Bundle(url: bundleURL)
+        
+        var path = resourceBundle?.path(forResource: "index", ofType: "html")
+        
+        if path == nil {
+            path = Bundle(for: Self.self).path(forResource: "index", ofType: "html")
+        }
+        
+        guard
+            let pathOfHtml = path,
+            var html = try? String(contentsOfFile: pathOfHtml, encoding: String.Encoding.utf8)
+            else {
+                return nil
         }
         
         html = self.replacePlaceholders(with: configuration, in: html)
@@ -57,7 +71,7 @@ internal class HtmlLoader {
         customVariables
             .sorted(by: {$0.key < $1.key }) // sorted, because Dictionary doesn't keep the order, and we need it in unit tests
             .forEach { (key, value) in
-            string.append(" var \(key) = \(quotationMark(any: value))\(value)\(quotationMark(any: value));\n")
+                string.append(" var \(key) = \(quotationMark(any: value))\(value)\(quotationMark(any: value));\n")
         }
         
         string.append("</script>")
