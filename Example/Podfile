@@ -9,10 +9,10 @@ target 'SnapEngage' do
   # Pods for SnapEngage
 
 #remove this after publishing the podspec:
- pod 'SnapEngageSDK', :path =>  "../"
+# pod 'SnapEngageSDK', :path =>  "../"
 
 #use this after publishing the podspec: 
-#pod 'SnapEngageSDK', :git =>  'https://github.com/SnapEngage/mobilesdk-ios.git'
+pod 'SnapEngageSDK', :git =>  'https://github.com/SnapEngage/mobilesdk-ios.git'
 
   target 'SnapEngageTests' do
     inherit! :search_paths
