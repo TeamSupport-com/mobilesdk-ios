@@ -9,7 +9,7 @@
 import Foundation
 
 /// Listener for error events.
-@objc public protocol ErrorEventListener: class {
+@objc public protocol ErrorEventListener: AnyObject {
     
     /// onError event is fired, when an error happened, for example when the SDK couldn't load the chat
     /// - Parameters:

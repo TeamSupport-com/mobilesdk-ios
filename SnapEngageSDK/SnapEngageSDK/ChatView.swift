@@ -172,6 +172,7 @@ public class ChatView: UIView, Chat {
         
         webView.allowsLinkPreview = false
         
+        webView.customUserAgent = WKWebView().value(forKey: "userAgent") as! String + " MobileSDK " + (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String)
         webView.scrollView.bounces = false
         webView.scrollView.isScrollEnabled = false
         
