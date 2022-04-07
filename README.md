@@ -9,6 +9,11 @@ Install the SDK using CocoaPods, by copying the following line in the Podfile:
 pod 'SnapEngageSDK'
 ```
 
+To install the SDK with Carthage, add the following line to your `Cartfile`.
+```
+github "SnapEngage/mobilesdk-ios" ~> 1.0
+```
+
 
 Import the SnapEngageSDK to your swift file:
 
