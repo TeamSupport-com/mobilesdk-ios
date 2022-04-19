@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2B2FAF79C4686599BAA2F889 /* Pods_SnapEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D02435AE94B5DECCB421A35 /* Pods_SnapEngage.framework */; };
+		8F91C0232809982E00301162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F91C0222809982E00301162 /* Assets.xcassets */; };
 		EFF2FFE85191AA0804FB9E91 /* Pods_SnapEngageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53602006450A343C72FE8BFE /* Pods_SnapEngageTests.framework */; };
 		FF23A9822447179600CF37E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23A9812447179600CF37E2 /* Assets.xcassets */; };
 		FF4B5B2B2434A350002C0B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B5B2A2434A350002C0B92 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		6346A6F575ECEE60BAADD777 /* Pods-SnapEngageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapEngageTests.debug.xcconfig"; path = "Target Support Files/Pods-SnapEngageTests/Pods-SnapEngageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D02435AE94B5DECCB421A35 /* Pods_SnapEngage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapEngage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		893FAF450052EB0A5D414AB6 /* Pods-SnapEngage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapEngage.debug.xcconfig"; path = "Target Support Files/Pods-SnapEngage/Pods-SnapEngage.debug.xcconfig"; sourceTree = "<group>"; };
+		8F91C0222809982E00301162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C82F1D3FB2622CD6B9373C /* Pods-SnapEngageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapEngageTests.release.xcconfig"; path = "Target Support Files/Pods-SnapEngageTests/Pods-SnapEngageTests.release.xcconfig"; sourceTree = "<group>"; };
 		B3E1165849E12AA3A391F99D /* Pods-SnapEngage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapEngage.release.xcconfig"; path = "Target Support Files/Pods-SnapEngage/Pods-SnapEngage.release.xcconfig"; sourceTree = "<group>"; };
 		BB9286FA16C8697F18C0439D /* Pods-SnapEngage.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapEngage.stage.xcconfig"; path = "Target Support Files/Pods-SnapEngage/Pods-SnapEngage.stage.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +99,6 @@
 				A9C82F1D3FB2622CD6B9373C /* Pods-SnapEngageTests.release.xcconfig */,
 				CEC653B71124727398484C94 /* Pods-SnapEngageTests.stage.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -133,6 +134,7 @@
 		FF4B5B292434A350002C0B92 /* SnapEngage */ = {
 			isa = PBXGroup;
 			children = (
+				8F91C0222809982E00301162 /* Assets.xcassets */,
 				FF4B5B732434B2EB002C0B92 /* ExportOptions-Stage.plist */,
 				FF4B5B682434A3D3002C0B92 /* Resources */,
 				FF4B5B2A2434A350002C0B92 /* AppDelegate.swift */,
@@ -212,7 +214,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = Attrecto;
 				TargetAttributes = {
 					FF4B5B262434A350002C0B92 = {
@@ -253,6 +255,7 @@
 				FFB216FB24373ED5004E86A3 /* Main.storyboard in Resources */,
 				FF4B5B6C2434A409002C0B92 /* Assets.xcassets in Resources */,
 				FF4B5B742434B2EB002C0B92 /* ExportOptions-Stage.plist in Resources */,
+				8F91C0232809982E00301162 /* Assets.xcassets in Resources */,
 				FF23A9822447179600CF37E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +400,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -422,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -459,6 +463,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -478,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -515,6 +520,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -532,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -545,19 +551,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9VT3LGCX93;
+				DEVELOPMENT_TEAM = VH5XD68396;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = SnapEngage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.attrecto.SnapEngage-debug";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.attrecto.SnapEngage2-debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "SnapEngage Debug";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,9 +576,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VH5XD68396;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = SnapEngage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,19 +600,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9VT3LGCX93;
+				DEVELOPMENT_TEAM = VH5XD68396;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = SnapEngage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.attrecto.SnapEngage-stage";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.attrecto.SnapEngage2-stage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "SnapEngage Stage";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
